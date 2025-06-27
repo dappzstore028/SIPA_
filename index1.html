@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SIPA (Sistem Informasi Pertanian Anda)</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+        }
+        .login-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Main container with background -->
+    <div class="min-h-screen bg-gradient-to-br from-blue-400 to-blue-700 flex items-center justify-center p-4">
+        
+        <!-- Login Card -->
+        <div class="login-card w-full max-w-md p-8 rounded-2xl shadow-2xl">
+            
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-extrabold text-blue-900">SIPA</h1>
+                <p class="text-gray-600 mt-2">Sistem Informasi Pertanian Anda</p>
+            </div>
+
+            <!-- Login Form -->
+            <!-- PENTING: Ganti "halaman-selanjutnya.html" dengan link tujuan Anda -->
+            <form action="https://dappzstore028.github.io/SIPA/" method="get">
+                <!-- Username Input -->
+                <div class="mb-4">
+                    <label for="username" class="block text-sm font-medium text-gray-700 mb-1">Username</label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                            <i class="fas fa-user text-gray-400"></i>
+                        </span>
+                        <input type="text" id="username" name="username" class="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition" placeholder="Masukkan username Anda" required>
+                    </div>
+                </div>
+
+                <!-- Password Input -->
+                <div class="mb-6">
+                    <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                    <div class="relative">
+                         <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                            <i class="fas fa-lock text-gray-400"></i>
+                        </span>
+                        <input type="password" id="password" name="password" class="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition" placeholder="Masukkan password Anda" required>
+                    </div>
+                </div>
+
+                <!-- Remember Me & Forgot Password -->
+                <div class="flex items-center justify-between mb-6 text-sm">
+                    <div class="flex items-center">
+                        <input type="checkbox" id="remember" name="remember" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                        <label for="remember" class="ml-2 text-gray-700">Ingat Saya</label>
+                    </div>
+                    <a href="#" class="font-medium text-blue-600 hover:text-blue-800 transition">Lupa Password?</a>
+                </div>
+
+                <!-- Login Button -->
+                <div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold py-3 px-4 rounded-lg hover:from-blue-700 hover:to-blue-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        LOGIN
+                    </button>
+                </div>
+            </form>
+
+            <!-- Sign Up Link -->
+            <div class="text-center mt-8">
+                <p class="text-sm text-gray-600">
+                    Belum punya akun? <a href="#" class="font-bold text-blue-600 hover:underline">Daftar Sekarang</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
